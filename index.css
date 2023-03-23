@@ -221,3 +221,7 @@ u{
   margin-left: 50px;
   /* align-items: flex-end; */
 }
+
+.about-grid p{
+  margin-right: 80px;
+}
