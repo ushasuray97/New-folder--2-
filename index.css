@@ -13,7 +13,11 @@ nav {
 #logo {
   width: 100px;
   height: 50px;
-  background-color: #333;
+  /* background-color: #333; */
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30;
 }
 
 /* Style the navigation links */
