@@ -166,7 +166,8 @@ a.learn{
 
 .icons img{
   height: 120px;
-  width: 200px;
+  width: 180px;
+  margin-left: 10px;
 }
 
 .icons>div{
@@ -198,23 +199,25 @@ u{
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+.about{
+  background-color: cadetblue;
+}
 
 .about-grid{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-self: center;
-  /* margin-left: 200px; */
-  /* margin-top: 60px; */
 }
 
 .about-grid>div{
   margin-top: 60px;
   align-items: baseline;
-  justify-content: space-between;
+  margin-left: 150px;
+  /* justify-content: space-between; */
 }
 
 .about-grid img{
   margin-left: 50px;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
