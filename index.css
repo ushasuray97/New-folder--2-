@@ -1,3 +1,13 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  position:  relative;
+  top:0; left:0; right: 0;
+  z-index: 1;
+  margin-bottom: 20px;
+  padding: 18px 20px;
+}
+
 /* Set up basic styles for the navbar */
 nav {
   height: 80px;
@@ -7,12 +17,15 @@ nav {
   padding: 0 20px;
 }
 
-
+img{
+  max-width: 100%;
+}
 
 /* Style the logo */
 
 #logo img{
   width: 70px;
+  max-width: 100%;
   mix-blend-mode: multiply; 
 }
 
@@ -102,7 +115,7 @@ section{
     height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -80px;
+    margin-top: -150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,6 +272,59 @@ u{
   display: grid;
   grid-template-columns: auto auto ;
   /* margin: 10px; */
+}
+
+.strategy{
+  margin-top: 50px;
+}
+
+.strategy>h2{
+  text-align: center;
+}
+
+.four-d{
+  display: flex;
+}
+
+.four-d>div{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-bottom: 60px;
+}
+
+#design{
+  margin-right: -90px;
+}
+
+#define{
+  margin-right: -90px;
+  margin-top: 80px;
+}
+
+#develop{
+  margin-left: -90px;
+}
+
+#deliver{
+  margin-left:-90px;
+  margin-top: 80px;
+}
+
+#four-d-strat{
+  /* border: 1px dotted #004A4D; */
+  /* border-radius: 0px; */
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+#four-d-strat img{
+  height: 200px;
 }
 
 .case-study>div{
@@ -430,22 +496,31 @@ u{
   margin-left: -20px;
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px;
+.blogs{
+  height: 400px;
 }
 
-.row div{
+#blog1{
+  display:flex;
+}
+.column {
+  float: left;
+  width: 49.5%;
+  padding: 10px;
+  height: 300px;
   border: 1px solid whitesmoke;
   background-color: whitesmoke;
 }
 
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  /* display: table; */
+  display: table;
+}
+
+.column img{
+  height: 60%;
 }
 
 .footer{
@@ -471,7 +546,14 @@ u{
   align-items: center;
   margin: 10px;
 }
+#bars{
+  /* color: #94BC45; */
+  display: none;
+}
 
+#closebar{
+  display: none;
+}
 .footer-div a{
   color: white;
 }
@@ -483,3 +565,4 @@ u{
   list-style-type: '- ';
   padding: 2px;
 }
+
