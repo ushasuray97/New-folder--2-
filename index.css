@@ -1,27 +1,18 @@
 /* Set up basic styles for the navbar */
 nav {
-  /* background-color: #f8f8f8; */
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Style the logo */
-#logo {
-  width: 50px;
-  height: 50px;
-  /* background-color: #333; */
-  color: white;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 30;
-}
 
 #logo img{
-  width: 50px;
+  width: 70px;
   mix-blend-mode: multiply; 
 }
 
@@ -42,7 +33,6 @@ nav ul {
 nav ul li {
   position: relative;
   margin-right: 20px;
-  /* color: white; */
 }
 
 nav ul li a {
@@ -103,20 +93,32 @@ body {
 
 section{
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  /* border-collapse: collapse; */
 }
 
 
 
 .section-intro{
-    background-image: url(https://yaninatrekhleb.github.io/restaurant-website/img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
-    height: 500px;
+    background-image: url('./images/pexels-fauxels-3182773.jpg');
+    height: 550px;
     background-size: cover;
+    background-repeat: no-repeat;
     margin-top: -80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.section-intro::before {
+  background-color: #004A4D;
+  content: '';
+  display:block;
+  height: 68%;
+  position: absolute;
+  width: 100%;
+  margin-top: -10px;
+  margin-left:0px;
+  opacity: 0.8;
 }
 
 .section-intro header{
@@ -127,6 +129,7 @@ section{
     flex-grow: 3;
     flex-shrink: 1;
     flex-basis: 0%;
+    opacity: 0.99;
 }
 
 .section-intro h1{
@@ -136,6 +139,7 @@ section{
     font-size: 4em;
     margin-top: 200px;
     margin-left: -450px;
+    opacity: 0.99;
 }
 
 .section-intro p{
@@ -145,6 +149,7 @@ section{
   font-size: 2em;
   margin-top: -10px;
   margin-left: -450px;
+  opacity: 0.99;
 }
 
 .learn{
@@ -158,6 +163,7 @@ section{
     margin-left: -600px;
     width: 100px;
     text-align: center;
+    opacity: 0.99;
 }
 
 .learn-wrap{
@@ -172,18 +178,17 @@ a.learn{
 .icons{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .icons img{
   height: 80px;
   width: 180px;
   margin-left: 10px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
-.icons>div{
-  justify-content: space-around;
-  align-items: space-around;
-}
 
 u{
   text-decoration-color:  #94BC45;
@@ -209,15 +214,20 @@ u{
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
+.grid-controller>div img{
+  height: 60px;
+  border: 1px solid #94BC45;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #94BC45;
+}
 .about{
   background-color:whitesmoke;
 
 }
 
-/* .back{
-  
-  opacity: 0.1;
-} */
+ 
 .about-grid{
   display: flex;
   flex-direction: row;
@@ -253,7 +263,6 @@ u{
 
 .case-study>div{
   padding: 10px;
-  /* margin-left: 10px; */
   height: 350px;
   text-align: center;
   justify-content: center;
@@ -261,22 +270,19 @@ u{
 }
 
 .left-case{
-  background: url('./images/2.png');
+  background-image: url('./images/2.png');
   color: white;
-  /* z-index: 2; */
-  opacity: 1;
-  /* background-color: #004A4D; */
 }
 
 .left-case::before {
   background-color: #004A4D;
   content: '';
   display:block;
-  height: 56%;
+  height: 61.8%;
   position: absolute;
   width: 49.5%;
   margin-top: -10px;
-  margin-left:-9px;
+  margin-left:-10px;
   /* z-index: 1; */
   opacity: 0.8;
 }
@@ -301,7 +307,6 @@ u{
 .right-case{
   background-image: url('./images/1.jpg');
   color: white;
-  /* background-color: #94BC45; */
   margin-left: 227px;
 }
 
@@ -324,7 +329,7 @@ u{
   background-color: #94BC45;
   content: '';
   display:block;
-  height: 56%;
+  height: 61.8%;
   position: absolute;
   width: 49.5%;
   margin-top: -10px;
@@ -335,6 +340,8 @@ u{
 
 .reviews{
   background-color: whitesmoke;
+  margin-top: 160px;
+  padding: 10px;
 }
 
 .reviews>h2{
@@ -342,7 +349,7 @@ u{
 }
 
 .reviews>button{
-  margin:30px 600px;
+  margin:130px 600px 20px;
   border: 1px solid #94BC45;
   border-radius: 50px;
   background-color: #94BC45;
@@ -391,6 +398,54 @@ u{
   border-bottom: 10px solid transparent;
   right: 50%;
   bottom: -18px;
+}
+
+.review>div p{
+  color: #231F20;
+}
+
+.review>div i{
+  margin-top: 30px;
+  font-size:20px;
+  color:#94BC45;
+}
+
+.review>div h4{
+  color: #231F20;
+}
+
+.review>div span{
+  color: #231F20;
+  font-size: smaller;
+  font-weight: normal;
+  font-stretch: extra-condensed;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-left: -20px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row div{
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  /* display: table; */
 }
 
 .footer{
